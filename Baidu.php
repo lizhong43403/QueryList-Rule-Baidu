@@ -23,9 +23,15 @@ class Baidu implements PluginContract
         ]
     ];
     const API = 'https://www.baidu.com/s';
+    /**
+     * 新增原始站点url规则
+     * User: lizhong43403 <lizhong43403@163.com>
+     * Date: 2024/07/13
+     */
     const RULES = [
       'title' => ['h3','text'],
-      'link' => ['h3>a','href']
+      'link' => ['h3>a','href'],
+      'href' => ['', 'mu']
     ];
     const RANGE = '.result';
 
